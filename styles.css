@@ -1,0 +1,95 @@
+* {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffffde;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #8e8f92;
+    text-align: center;
+}
+
+.hero { 
+    background-image: url("computercode2400x1600.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+}
+
+h1, h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.headshot {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.post-hero-socials {
+    background-color: #8e8f92;
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px;
+}
+
+.pre-footer-socials {
+    background-color: #f3f4f4;
+    text-align: center;
+}
+
+footer {
+    background-color: #8e8f92;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contactform{
+    text-align: center;
+}
