@@ -11,9 +11,9 @@
         <a href="index.html">Home</a> | <a href="education&experience.html">Education & Experience</a> | <a href="contact.html">Contact</a>
     </nav>
     <div class="hero">
-        HELLO, I'M
+        Hello, I'm
         <h1>Jara Rodriguez</h1>
-        MSc Computer Science Student
+        <i>MSc Computer Science Student</i>
     </div>
     <div class="post-hero-socials">
         <img class="headshot" src="jaraphoto.jpg" alt="A headshot of Jara">
@@ -33,19 +33,20 @@
                 <img src="twitterwhite.png" alt="Twitter icon and link">
             </a>
         </div>
+        <button class="downloadcv" onclick="downloadFile()">Download CV</button>
     </div>
     <main>
-        <p>About<br>
-        MY BACKGROUND</p>
+        <p><i>About</i><br>
+        <b>MY BACKGROUND</b></p>
         <p>With a passion for technology, software development, and all things computer science, I have both the skill set and professional background necessary to dive deep into the world of Information & Communication Technologies. As a detail-oriented, self-motivated team player with excellent communication skills, I envision an exciting future in the industry. Browse my website to see all the projects I've worked on and the programming languages and tools I'm proficient in.</p>
     </main>
     <div class="pre-footer-socials">
-        I'd love to hear from you.<br>
+        <i>I'd love to hear from you.</i><br>
         <p>
             jarajrodriguez@gmail.com<br>
             (089)-969-7306
         </p>
-        <div>
+        <div class="social-icons">
             <a href="https://www.linkedin.com/in/jara-rodriguez-991bb826b/">
                 <img src="linkedinblack.png" alt="LinkedIn icon and link">
             </a>
@@ -61,7 +62,23 @@
         &copy; 2023 By Jara Rodriguez
     </footer>
 
-
 </body>
+<script>
+    function downloadFile() {
+      // Set the file name and path
+      var fileName = 'Jara Rodriguez - CV.docx';
+      var filePath = './' + fileName;
+
+      // Create a link element
+      var link = document.createElement('a');
+      link.href = filePath;
+
+      // Set the download attribute to the file name
+      link.download = fileName;
+
+      // Programmatically click the link to trigger the download
+      link.click();
+    }
+</script>
 
 </html>
