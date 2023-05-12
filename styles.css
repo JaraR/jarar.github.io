@@ -170,7 +170,7 @@ background-color: #555;
     .post-hero-socials{grid-column: 1; grid-row: 1/span 2;}
     main{grid-column: 2; grid-row: 2;}
     .pre-footer-socials{grid-column: 2; grid-row: 3;}
-    footer{grid-column: 2; grid-row: 4; line-height: .25fr; display: flex; align-items: center; justify-content: center;}
+    footer{grid-column: 2; grid-row: 4; display: flex; align-items: center; justify-content: center;}
     .contactmain{grid-column: 1/span 2; grid-row: 1/span 2;}
     .educationexperience{
         display: grid;
