@@ -157,7 +157,7 @@ li{
 background-color: #555;
 }
 
-@media (min-width: 767px) and (max-width: 1020px){
+@media (min-width: 768px) and (max-width: 1020px){
     .grid-container{
         display: grid;
         grid-template-columns: 2fr 3fr;
