@@ -8,10 +8,15 @@
 
 <body class="grid-container">
     <nav>
-        <a href="index.html">Home</a> | <a href="education&experience.html">Education & Experience</a> | <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education&experience.html">Education & Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-    <main>
-        <form class="contactform" name="ContactForm" action="mailto:jarajrodriguez@gmail.com" method="post">
+    <main class="contactmain">
+        <h2>Contact Me</h2><br>
+        <form name="ContactForm" action="mailto:jarajrodriguez@gmail.com" method="post">
             <label for="fname">First name*</label><br>
             <input type="text" id="fname" name="fname" required><br>
             <label for="lname">Last name*</label><br>
@@ -26,12 +31,12 @@
         </form>
     </main>
     <div class="pre-footer-socials">
-        I'd love to hear from you.<br>
+        <em>I'd love to hear from you.</em>
         <p>
             jarajrodriguez@gmail.com<br>
             (089)-969-7306
         </p>
-        <div>
+        <div class="social-icons">
             <a href="https://www.linkedin.com/in/jara-rodriguez-991bb826b/">
                 <img src="linkedinblack.png" alt="LinkedIn icon and link">
             </a>
@@ -46,11 +51,8 @@
     <footer>
         &copy; 2023 By Jara Rodriguez
     </footer>
-
-
-
-
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
+<script src="scripts.js"></script>
 
 </html>

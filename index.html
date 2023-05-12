@@ -8,12 +8,16 @@
 
 <body class="grid-container">
     <nav>
-        <a href="index.html">Home</a> | <a href="education&experience.html">Education & Experience</a> | <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education&experience.html">Education & Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
     <div class="hero">
         Hello, I'm
         <h1>Jara Rodriguez</h1>
-        <i>MSc Computer Science Student</i>
+        <em>MSc Computer Science Student</em>
     </div>
     <div class="post-hero-socials">
         <img class="headshot" src="jaraphoto.jpg" alt="A headshot of Jara">
@@ -36,12 +40,12 @@
         <button class="downloadcv" onclick="downloadFile()">Download CV</button>
     </div>
     <main>
-        <p><i>About</i><br>
-        <b>MY BACKGROUND</b></p>
+        <p><b>About</b><br>
+        <em>MY BACKGROUND</em></p>
         <p>With a passion for technology, software development, and all things computer science, I have both the skill set and professional background necessary to dive deep into the world of Information & Communication Technologies. As a detail-oriented, self-motivated team player with excellent communication skills, I envision an exciting future in the industry. Browse my website to see all the projects I've worked on and the programming languages and tools I'm proficient in.</p>
     </main>
     <div class="pre-footer-socials">
-        <i>I'd love to hear from you.</i><br>
+        <em>I'd love to hear from you.</em>
         <p>
             jarajrodriguez@gmail.com<br>
             (089)-969-7306
@@ -61,24 +65,36 @@
     <footer>
         &copy; 2023 By Jara Rodriguez
     </footer>
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
-<script>
+<!-- <script>
     function downloadFile() {
-      // Set the file name and path
       var fileName = 'Jara Rodriguez - CV.docx';
       var filePath = './' + fileName;
-
-      // Create a link element
       var link = document.createElement('a');
       link.href = filePath;
-
-      // Set the download attribute to the file name
       link.download = fileName;
-
-      // Programmatically click the link to trigger the download
       link.click();
     }
-</script>
+
+
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+        
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+</script> -->
+
+<script src="scripts.js"></script>
 
 </html>
